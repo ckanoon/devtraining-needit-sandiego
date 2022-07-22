@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="Need It" max_length="40" name="x_58872_needit_need_it" sizeclass="3" type="collection">
+        <element attributes="encode_utf8=false" label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="リーガル" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="人材" language="ja" sequence="0" value="人材"/>
+                <element inactive_on_update="false" label="施設" language="ja" sequence="1" value="施設"/>
+                <element inactive_on_update="false" label="リーガル" language="ja" sequence="2" value="リーガル"/>
+                <element inactive_on_update="false" label="あなたの部門の選択" language="ja" sequence="3" value="あなたの部門の選択"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="人材2" label="What needed" mandatory="true" max_length="40" name="u_what_needed" type="string">
+            <choice>
+                <element inactive_on_update="false" label="人材1" language="ja" sequence="0" value="人材1"/>
+                <element inactive_on_update="false" label="人材2" language="ja" sequence="1" value="人材2"/>
+                <element inactive_on_update="false" label="施設1" language="ja" sequence="2" value="施設1"/>
+                <element inactive_on_update="false" label="施設2" language="ja" sequence="3" value="施設2"/>
+                <element inactive_on_update="false" label="リーガル1" language="ja" sequence="4" value="リーガル1"/>
+                <element inactive_on_update="false" label="リーガル2" language="ja" sequence="5" value="リーガル2"/>
+                <element inactive_on_update="false" label="あなたの部門の選択1" language="ja" sequence="6" value="あなたの部門の選択1"/>
+                <element inactive_on_update="false" label="あなたの部門の選択2" language="ja" sequence="7" value="あなたの部門の選択2"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="When needed" mandatory="true" max_length="40" name="u_when_needed" type="glide_date"/>
+    </element>
+</database>
